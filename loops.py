@@ -24,8 +24,6 @@ print(f"Total Height: {total_height}")
 print(f"Number of students: {num_students}")
 print(f"Average Height: {average_height}")
 
- 
-# Prompt the user to input the marks of students
 print("Enter the marks of the students (separated by spaces):")
 student_scores = input().split()
 
@@ -41,3 +39,31 @@ for score in student_scores:
 
 # Print the highest score
 print(f"The highest score in the class is: {highest_score}")
+
+total = 0
+for number in range(1,101):
+    total += number
+print (total)
+
+for number in range(1,11,3):
+    print(number)
+
+target = int(input())
+even_sum = 0
+for number in range(2,target+1,2):
+    even_sum += number
+print (even_sum)
+
+test = 100
+for number in range(1,target+1):
+    if number %3 == 0 and number % 5 == 0 :
+        print ("FizzBuzz")
+    elif number % 3 == 0 :
+        print ("Fizz")
+    elif number % 5 == 0 :
+        print ("Buzz")
+    else:
+        print (number)
+
+
+
