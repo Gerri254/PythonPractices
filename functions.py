@@ -18,3 +18,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Use of while function
+
+def get_positive_integer():
+    """
+    Prompt the user to input a positive integer and return it.
+    """
+    while True:
+        try:
+            num = int(input("Please enter a positive integer: "))
+            if num > 0:
+                return num
+            else:
+                print("Please enter a positive integer greater than 0.")
+        except ValueError:
+            print("Invalid input. Please enter a valid positive integer.")
+
+def main():
+    # Get a positive integer from the user
+    positive_integer = get_positive_integer()
+    print("You entered:", positive_integer)
+
+if __name__ == "__main__":
+    main()
